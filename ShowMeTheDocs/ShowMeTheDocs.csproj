@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\ShowMeTheDocs.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -39,7 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="IDocumentationProvider.cs" />
+    <Compile Include="IDocumentationRepository.cs" />
+    <Compile Include="IFieldDocument.cs" />
+    <Compile Include="IMethodDocument.cs" />
+    <Compile Include="INamed.cs" />
+    <Compile Include="INamespaceDocument.cs" />
+    <Compile Include="IParamDocument.cs" />
+    <Compile Include="IPropertyDocument.cs" />
+    <Compile Include="IRemarks.cs" />
+    <Compile Include="ISummary.cs" />
+    <Compile Include="ITypeDocument.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -8,7 +8,7 @@ namespace ShowMeTheDocs
     /// <summary>
     /// Defines an interface for an object that contains documentation about a namespace.
     /// </summary>
-    public interface INamespaceDocument : ISummary, IRemarks
+    public interface INamespaceDocument : INamed, ISummary, IRemarks
     {
         /// <summary>
         /// Gets a list of documents that provide documentation about classes, interfaces, structures, enums and delegates.

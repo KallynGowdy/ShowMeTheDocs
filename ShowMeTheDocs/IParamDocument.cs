@@ -17,5 +17,13 @@ namespace ShowMeTheDocs
         {
             get;
         }
+
+        /// <summary>
+        /// Gets the position of this parameter.
+        /// </summary>
+        int Position
+        {
+            get;
+        }
     }
 }
